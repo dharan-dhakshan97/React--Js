@@ -1,12 +1,9 @@
-import States from "./Hooks/States";
-import './App.css';
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <>
-     <States/>
-    </>
-  );
+    <div>App</div>
+  )
 }
 
 export default App;
