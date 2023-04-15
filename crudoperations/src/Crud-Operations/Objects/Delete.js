@@ -61,7 +61,6 @@ const [candidates,setCandidates]=useState(labour);
 
 
  <ul>
-
 {candidates.map(candidates=>(
     <li key={candidates.id}>
     {candidates.name}{' '}
