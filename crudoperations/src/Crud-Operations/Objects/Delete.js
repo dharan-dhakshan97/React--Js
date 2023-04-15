@@ -7,12 +7,12 @@ const [students,setStudents]=useState([
     {
         regno:101,
         name:"Venkat",
-        age:21
+        age:21,
     },
     {
         regno:102,
         name:"Balaji",
-        age:21
+        age:21,
         
     },
     {
@@ -54,10 +54,9 @@ function handleDelete(deletingStudent)
     
    <li key={index}>
 
-<p>{student.regno}</p>
-<p>{student.name}</p>
-
-
+<p>RegNo:{student.regno}</p>
+<p>StudentName:{student.name}</p>
+<p>StudentAge:{student.age}</p>
 <button onClick={()=>handleDelete(student)}>Delete Item</button></li>)}
 
     </ul>
