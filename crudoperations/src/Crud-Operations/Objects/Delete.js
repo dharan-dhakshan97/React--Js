@@ -34,33 +34,47 @@ age:24
 const [candidates,setCandidates]=useState(labour);
 
 
-const handleChange=id=>
-{
-    setCandidates((current)=>{
-    
-     return  current.filter((candidate)=>candidate.id !==id)
-});
-}
+// const handleChange=(a)=>
+// {
+//     setCandidates(candidates.filter(a => a.id!==candidate.id));
+
+// }
 
   return (
     <>
     
     <main>
+       
         <h1 style={{textAlign:"center"}}>Delete a Item</h1>
-        <ul>
-{ candidates.map((candidate)=>
-    (
-        <li key={candidate.id}>
-            <p>Id:{candidate.id}</p>
+        
+{/* {candidates.map((candidate)=>
+        <li key={candidate.id}> {candidate.name} {' '} {candidate.age}
+        
+        <p>Id:{candidate.id}</p> 
         <p>Name:{candidate.name}</p>
         <p>Age:{candidate.age}</p>
         </li>
-    ))}
-<button onClick={()=>handleChange(candidate.id)}>Delete Item</button>
-        </ul>
+    )}
+    </ul>
+<button onClick={handleChange}>Delete Item</button> */}
+
+
+
+ <ul>
+
+{candidates.map(candidates=>(
+    <li key={candidates.id}>
+    {candidates.name}{' '}
+<button onClick={()=>{setCandidates(candidates.fiter(a=>a.id !==candidates.id));
+
+}}>Delete Item</button>
+</li>
+))}
+</ul>
+
 </main>
     </>
-  )
+  );
 }
 
 export default Delete;
