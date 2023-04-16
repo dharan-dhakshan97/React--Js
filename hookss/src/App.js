@@ -6,6 +6,7 @@ import "./Hooks/Styles/Styles.css";
 import Effectsoverview from "./Hooks/Effects/Effectsoverview";
 import Effectsdependency from "./Hooks/Effects/Effectsdependency";
 import Effectsettimeout from "./Hooks/Effects/Effectssettimeout";
+import Effectsapicall from "./Hooks/Effects/Effectsapicall";
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
 <Effectsoverview/>
 <Effectsdependency/>
 <Effectsettimeout/>
+<Effectsapicall/>
 </>
   )
 }
