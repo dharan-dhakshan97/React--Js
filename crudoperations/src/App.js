@@ -1,6 +1,6 @@
 
-import Update from "./Crud-Operations/Objects/Update";
-import Delete from "./Crud-Operations/Objects/Delete";
+import Update from "./Crud-Operations/Update";
+import Delete from "./Crud-Operations/Delete";
 
 function App() {
   return (

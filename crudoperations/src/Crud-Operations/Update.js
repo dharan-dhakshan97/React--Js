@@ -1,6 +1,5 @@
 import {useState} from 'react';
-import "../Styles/Styles.css";
-
+import "./Styles/Styles.css";
 const Update=()=>
 {
 

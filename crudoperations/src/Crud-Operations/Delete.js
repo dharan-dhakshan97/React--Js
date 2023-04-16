@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from "react";
-
+import "./Styles/Styles.css";
 const Delete = () => {
 
 const [students,setStudents]=useState([
@@ -61,7 +61,6 @@ function handleDelete(deletingStudent)
 
     </ul>
 </mai>
-
 
   )
 }
