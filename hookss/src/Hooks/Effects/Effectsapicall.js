@@ -66,7 +66,11 @@ function Effectsapicall() {
 
   return (
     <div>
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+      {data ? <pre>{JSON.stringify(data, 2)}</pre> : 'Loading...'}
+      {data.map((value,index)=>
+      (
+        <p>{value.title}</p>
+      ))}
     </div>
   );
 }
