@@ -1,10 +1,12 @@
+import React from 'react'
 import Effectsapicall from "./Hooks/Effects/Effectsapicall";
-function App() {
+
+const App = () => {
   return (
     <>
-      <Effectsaapicall/>
+    <Effectsapicall/>
     </>
-  );
+  )
 }
 
 export default App;
