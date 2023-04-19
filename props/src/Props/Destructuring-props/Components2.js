@@ -6,4 +6,4 @@ const Components2 = () => {
       )
 }
 
-export default Components2
+export default Components2;
